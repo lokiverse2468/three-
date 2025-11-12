@@ -159,8 +159,8 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 flex flex-1 flex-col justify-between">
-          <div className="mx-auto w-full max-w-6xl px-6 pb-12 pt-20 sm:px-12 sm:pb-16 sm:pt-24">
-            <div className="grid gap-12 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1.2fr)] lg:gap-16">
+          <div className="mx-auto w-full max-w-6xl px-6 pb-12 pt-20 sm:px-10 sm:pb-16 sm:pt-24">
+            <div className="grid gap-12 lg:grid-cols-[minmax(0,1.05fr)_minmax(360px,1fr)] xl:grid-cols-[minmax(0,1.05fr)_minmax(420px,1fr)]">
               <article className="space-y-8 sm:space-y-10">
                 <span className="inline-flex items-center rounded-full border border-zinc-700/60 bg-zinc-900/70 px-4 py-2 text-xs uppercase tracking-[0.3em] text-zinc-400 shadow-[0_0_30px_rgba(255,255,255,0.08)]">
                   Wave-crafted Interfaces
@@ -197,11 +197,11 @@ export default function Home() {
                 </div>
               </article>
 
-              <div className="grid gap-6 rounded-[32px] border border-zinc-800/70 bg-zinc-950/55 p-6 backdrop-blur-lg sm:grid-cols-2 xl:grid-cols-3">
+              <div className="grid gap-5 rounded-[28px] border border-zinc-800/70 bg-zinc-950/55 p-6 backdrop-blur-lg sm:grid-cols-2 sm:gap-6 lg:max-w-[560px] xl:max-w-[620px]">
                 {highlights.map((highlight) => (
                   <article
                     key={highlight.title}
-                    className="flex flex-col gap-3 rounded-3xl border border-zinc-800/60 bg-zinc-900/50 p-6 shadow-[0_40px_120px_rgba(24,24,27,0.35)] backdrop-blur"
+                    className="flex flex-col gap-3 rounded-3xl border border-zinc-800/60 bg-zinc-900/50 p-5 shadow-[0_40px_120px_rgba(24,24,27,0.3)] backdrop-blur"
                   >
                     <div className="flex items-center gap-4">
                       <div className="flex h-12 w-12 items-center justify-center rounded-full border border-zinc-800/70 bg-zinc-950/60">
