@@ -224,7 +224,7 @@ export function WaveScene() {
   return (
     <div
       ref={containerRef}
-      className="relative h-[520px] w-full overflow-visible"
+      className="relative h-[360px] w-full overflow-visible sm:h-[480px] lg:h-[520px]"
     >
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle,_rgba(255,255,255,0.08),transparent_55%)] blur-3xl" />
     </div>

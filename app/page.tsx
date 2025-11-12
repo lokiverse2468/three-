@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { WaveScene } from "@/components/WaveScene";
+import { LightningLayer } from "@/components/LightningLayer";
 
 const highlights = [
   {
@@ -150,6 +151,7 @@ export default function Home() {
         <div className="absolute inset-x-0 bottom-0 h-[520px] bg-[linear-gradient(120deg,rgba(156,163,175,0.08),rgba(24,24,27,0)_60%)]" />
         <div className="absolute inset-x-0 top-0 h-full bg-[repeating-linear-gradient(135deg,rgba(63,63,70,0.05)_0px,rgba(63,63,70,0.05)_2px,transparent_2px,transparent_20px)] opacity-60 [mask-image:linear-gradient(180deg,rgba(255,255,255,0.4),transparent_70%)]" />
       </div>
+      <LightningLayer className="opacity-70" />
 
       <section className="relative flex min-h-screen flex-col justify-between overflow-hidden">
         <div className="pointer-events-none absolute inset-0">
@@ -157,65 +159,67 @@ export default function Home() {
         </div>
 
         <div className="relative z-10 flex flex-1 flex-col justify-between">
-          <div className="grid gap-16 px-8 pb-16 pt-24 sm:px-16 lg:grid-cols-[minmax(320px,1.1fr)_minmax(320px,1.4fr)] lg:px-24">
-            <article className="space-y-10">
-              <span className="inline-flex items-center rounded-full border border-zinc-700/60 bg-zinc-900/70 px-4 py-2 text-xs uppercase tracking-[0.3em] text-zinc-400 shadow-[0_0_30px_rgba(255,255,255,0.08)]">
-                Wave-crafted Interfaces
-              </span>
-              <div className="space-y-6">
-                <h1 className="text-balance text-4xl font-semibold leading-tight text-zinc-50 sm:text-5xl lg:text-6xl">
-                  Move your product through monochrome oceans of motion.
-          </h1>
-                <p className="text-pretty text-base text-zinc-400 sm:text-lg">
-                  Create wave-driven dashboards that sculpt light and shadow. Three.js
-                  choreography weaves with Next.js velocity—no backend, just pure
-                  experience.
-                </p>
-              </div>
-              <div className="flex flex-wrap gap-3">
-                <Link
-                  href="/demo"
-                  className="inline-flex items-center justify-center rounded-full bg-zinc-100 px-7 py-3 text-sm font-medium tracking-wide text-zinc-900 shadow-[0_20px_50px_rgba(24,24,27,0.35)] transition hover:bg-zinc-200 hover:shadow-[0_22px_60px_rgba(24,24,27,0.45)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400"
-                >
-                  Launch Live Demo
-                </Link>
-                <Link
-                  href="/ui-kit"
-                  className="inline-flex items-center justify-center rounded-full border border-zinc-700/80 px-7 py-3 text-sm font-medium tracking-wide text-zinc-200 transition hover:border-zinc-500 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400"
-                >
-                  View UI Kit
-                </Link>
-                <Link
-                  href="/command"
-                  className="inline-flex items-center justify-center rounded-full border border-zinc-700/80 px-7 py-3 text-sm font-medium tracking-wide text-zinc-200 transition hover:border-zinc-500 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400"
-                >
-                  Visit Command Room
-                </Link>
-              </div>
-            </article>
+          <div className="mx-auto w-full max-w-6xl px-6 pb-12 pt-20 sm:px-12 sm:pb-16 sm:pt-24">
+            <div className="grid gap-12 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1.2fr)] lg:gap-16">
+              <article className="space-y-8 sm:space-y-10">
+                <span className="inline-flex items-center rounded-full border border-zinc-700/60 bg-zinc-900/70 px-4 py-2 text-xs uppercase tracking-[0.3em] text-zinc-400 shadow-[0_0_30px_rgba(255,255,255,0.08)]">
+                  Wave-crafted Interfaces
+                </span>
+                <div className="space-y-6">
+                  <h1 className="text-balance text-3xl font-semibold leading-tight text-zinc-50 sm:text-5xl lg:text-6xl">
+                    Move your product through monochrome oceans of motion.
+                  </h1>
+                  <p className="text-pretty text-base text-zinc-400 sm:text-lg">
+                    Create wave-driven dashboards that sculpt light and shadow. Three.js
+                    choreography weaves with Next.js velocity—no backend, just pure
+                    experience.
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-3">
+                  <Link
+                    href="/demo"
+                    className="inline-flex items-center justify-center rounded-full bg-zinc-100 px-6 py-3 text-sm font-medium tracking-wide text-zinc-900 shadow-[0_20px_50px_rgba(24,24,27,0.35)] transition hover:bg-zinc-200 hover:shadow-[0_22px_60px_rgba(24,24,27,0.45)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400"
+                  >
+                    Launch Live Demo
+                  </Link>
+                  <Link
+                    href="/ui-kit"
+                    className="inline-flex items-center justify-center rounded-full border border-zinc-700/80 px-6 py-3 text-sm font-medium tracking-wide text-zinc-200 transition hover:border-zinc-500 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400"
+                  >
+                    View UI Kit
+                  </Link>
+                  <Link
+                    href="/command"
+                    className="inline-flex items-center justify-center rounded-full border border-zinc-700/80 px-6 py-3 text-sm font-medium tracking-wide text-zinc-200 transition hover:border-zinc-500 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-400"
+                  >
+                    Visit Command Room
+                  </Link>
+                </div>
+              </article>
 
-            <div className="grid gap-8 rounded-[36px] border border-zinc-800/70 bg-zinc-950/55 p-8 backdrop-blur-lg md:grid-cols-3 md:gap-6 lg:grid-cols-2">
-              {highlights.map((highlight) => (
-                <article
-                  key={highlight.title}
-                  className="flex flex-col gap-3 rounded-3xl border border-zinc-800/60 bg-zinc-900/50 p-6 shadow-[0_40px_120px_rgba(24,24,27,0.35)] backdrop-blur"
-                >
-                  <div className="flex items-center gap-4">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full border border-zinc-800/70 bg-zinc-950/60">
-                      {highlight.icon}
+              <div className="grid gap-6 rounded-[32px] border border-zinc-800/70 bg-zinc-950/55 p-6 backdrop-blur-lg sm:grid-cols-2 xl:grid-cols-3">
+                {highlights.map((highlight) => (
+                  <article
+                    key={highlight.title}
+                    className="flex flex-col gap-3 rounded-3xl border border-zinc-800/60 bg-zinc-900/50 p-6 shadow-[0_40px_120px_rgba(24,24,27,0.35)] backdrop-blur"
+                  >
+                    <div className="flex items-center gap-4">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-full border border-zinc-800/70 bg-zinc-950/60">
+                        {highlight.icon}
+                      </div>
+                      <h2 className="text-base font-medium text-zinc-100">
+                        {highlight.title}
+                      </h2>
                     </div>
-                    <h2 className="text-base font-medium text-zinc-100">
-                      {highlight.title}
-                    </h2>
-                  </div>
-                  <p className="text-sm text-zinc-400">{highlight.description}</p>
-                </article>
-              ))}
+                    <p className="text-sm text-zinc-400">{highlight.description}</p>
+                  </article>
+                ))}
+              </div>
             </div>
           </div>
 
-          <div className="relative z-10 px-8 pb-20 sm:px-16 lg:px-24">
-            <section className="w-full rounded-[42px] border border-zinc-800/60 bg-zinc-950/60 p-10 backdrop-blur">
+          <div className="relative z-10 mx-auto w-full max-w-6xl px-6 pb-16 sm:px-12 lg:px-0">
+            <section className="w-full rounded-[42px] border border-zinc-800/60 bg-zinc-950/60 p-8 backdrop-blur sm:p-10">
               <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
                 {glyphs.map((glyph) => (
                   <div key={glyph.label} className="space-y-4 text-center">
@@ -224,14 +228,14 @@ export default function Home() {
                     </div>
                     <p className="text-xs uppercase tracking-[0.3em] text-zinc-500">
                       {glyph.label}
-          </p>
-        </div>
+                    </p>
+                  </div>
                 ))}
               </div>
             </section>
           </div>
         </div>
       </section>
-      </main>
+    </main>
   );
 }

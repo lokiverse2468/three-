@@ -208,7 +208,7 @@ export function CommandScene() {
   return (
     <div
       ref={containerRef}
-      className="relative h-[560px] w-full overflow-hidden rounded-[48px] border border-slate-800/40 bg-slate-950/60 backdrop-blur-xl"
+      className="relative h-[360px] w-full overflow-hidden rounded-[40px] border border-slate-800/40 bg-slate-950/60 backdrop-blur-xl sm:h-[460px] sm:rounded-[48px] lg:h-[560px]"
     >
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle,_rgba(148,163,184,0.12),transparent_60%)]" />
     </div>

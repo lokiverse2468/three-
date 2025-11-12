@@ -168,7 +168,7 @@ export function SoundWaveScene() {
   return (
     <div
       ref={containerRef}
-      className="relative h-[520px] w-full overflow-hidden rounded-[56px] border border-slate-800/60 bg-gradient-to-br from-slate-950/85 via-slate-950/70 to-slate-900/85 backdrop-blur-xl"
+      className="relative h-[340px] w-full overflow-hidden rounded-[40px] border border-slate-800/60 bg-gradient-to-br from-slate-950/85 via-slate-950/70 to-slate-900/85 backdrop-blur-xl sm:h-[420px] sm:rounded-[48px] lg:h-[520px] lg:rounded-[56px]"
     >
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle,_rgba(148,163,184,0.14),transparent_65%)]" />
     </div>
